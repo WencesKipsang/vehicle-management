@@ -267,9 +267,9 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                  <span class="profile-ava">
-                    <img alt="" th:src="@{'/img/photos/' + ${#authentication.getPrincipal().getUsername()} +'.jpg'}" height="38" width="38">
+                    <img alt="" th:src="@{'/img/photos/' + ${getUsername()} +'.jpg'}" height="38" width="38">
                  </span>
-                 <span class="username" th:text="${#authentication.getPrincipal().getUsername()}">User</span>
+                 <span class="username" th:text="${getUsername()}">User</span>
                  <b class="caret"></b>
              </a>
             <ul class="dropdown-menu extended logout">
@@ -435,9 +435,9 @@
                   <h6><span th:text="${employee.jobTitle.description}"></span></h6>
                 </div>
                 <div class="col-lg-4 col-sm-4 follow-info">
-                  <p>Hello I’m KindsonTheGenius, a leading expert in interactive and creative design.</p>
-                  <p>@KindsonM</p>
-                  <p><i class="fa fa-twitter">kindsonthegenius</i></p>
+                  <p></p>
+                  <p>@Kip</p>
+                  <p><i class="fa fa-twitter"></i></p>
                   <h6>
                                     <span><i class="icon_clock_alt"></i>
                                     <span th:text="${#dates.format(#dates.createNow(), 'hh:mm a')}"></span>
@@ -619,7 +619,6 @@
                   <div id="profile" class="tab-pane">
                     <section class="panel">
                       <div class="bio-graph-heading">
-                        Hello I’m Kindson The Genius, a leading expert in interactive and creative design specializing in the mobile medium. My graduation from Massey University with a Bachelor of Design majoring in visual communication.
                       </div>
                       <div class="panel-body bio-graph-info">
                         <h1>Bio Graph</h1>

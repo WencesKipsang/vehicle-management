@@ -263,9 +263,9 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                    <img alt="" th:src="@{'/img/photos/' + ${#authentication.getPrincipal().getUsername()} +'.jpg'}" height="38" width="38">
+                    <img alt="" th:src="@{'/img/photos/' + ${getUsername()} +'.jpg'}" height="38" width="38">
                             </span>
-                            <span class="username" th:text="${#authentication.getPrincipal().getUsername()}">User</span>
+                            <span class="username" th:text="${getUsername()}">User</span>
                             <b class="caret"></b>
                         </a>
             <ul class="dropdown-menu extended logout">
@@ -469,7 +469,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
           -->
-          Designed by <a href="#">BootstrapMade</a>
+          Designed by <a href="#">Wences</a>
         </div>
     </div>
   </section>

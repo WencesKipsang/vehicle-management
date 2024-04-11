@@ -18,7 +18,7 @@ public class User {
     @Id
 	private int id;
     private String firstname;
-    private String lastname;
+	private String lastname;
 	private String username;
 	private String password;
 	public String getFirstname() {
@@ -39,6 +39,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	 public String getPassword() {
+			return password;
+		}
+	 public String getUsername() {
+			return username;
+		}
 //	public User getPassword() {
 //		// TODO Auto-generated method stub
 //		return null;
@@ -51,5 +57,6 @@ public class User {
 //		// TODO Auto-generated method stub
 //		return null;
 //	}
+	
 
 }

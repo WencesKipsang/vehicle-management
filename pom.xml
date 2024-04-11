@@ -82,7 +82,7 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
-					</excludes>
+					</excludes><!--$NO-MVN-MAN-VER$-->
 				</configuration>
 			</plugin>
 		</plugins>
